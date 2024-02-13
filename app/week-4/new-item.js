@@ -1,4 +1,3 @@
-// use client directive
 "use client";
 
 import React, { useState } from 'react';
@@ -10,13 +9,12 @@ const NewItem = () => {
     const [category, setCategory] = useState("produce");
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent form submission
-        // Create item object
+        e.preventDefault(); 
         const item = { name, quantity, category };
-        console.log(item); // Log item to console
-        // Display an alert with current state
+        console.log(item);
+        // Displaying an alert
         alert(`Name: ${name}, Quantity: ${quantity}, Category: ${category}`);
-        // Reset state variables
+        // Resetting state variables 
         setName("");
         setQuantity(1);
         setCategory("produce");
