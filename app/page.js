@@ -57,6 +57,13 @@ export default function RootPage() {
             </span>
           </Link>
         </p>
+        <p className="text-lg">
+          <Link href="/week-10" passHref>
+            <span className="cursor-pointer hover:underline">
+              Link to Week 10 Assignment
+            </span>
+          </Link>
+        </p>
       </div>
     </main>
   );
